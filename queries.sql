@@ -177,8 +177,8 @@ GROUP BY s.name
 ORDER BY total_visits DESC;
 
 -- Performance audit starts here
-explain analyze SELECT COUNT(*) FROM visits where pet_id = 4;
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;
 
-explain analyze SELECT COUNT(*) FROM visits where pet_id = 2;
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 2;
 
 explain analyze SELECT COUNT(*) FROM owners where email='owner_18327@mail.com';
